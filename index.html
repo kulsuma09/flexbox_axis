@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Axis Example</title>
+  <!-- Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .flex_container {
+      display: flex;
+      flex-direction: row; /* By default Main Axis direction is row. */
+      height: 200px;
+      border:2px solid #83de15;
+      background-color: #21981d36;
+      align-items: center;  /*Align item property indicate Cross Axis */
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      margin: 5px;
+      text-align: center;
+      align-content: center;
+    }
+    span{
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+          <div class="titel">
+            <h2>Flexbox Axis Example</h2>
+        </div>
+        <div class="flex_container">
+          <div class="item"><span>1</span></div>
+          <div class="item"><span>2</span></div>
+          <div class="item"><span>3</span></div>
+        </div>
+    </div>
+</body>
+</html>
